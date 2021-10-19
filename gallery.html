@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="prism.css" />
+    <script src="prism.js"></script>
+    <script src="hammer.js"></script>
+    <style>
+      div {
+        border-style: solid;
+        border-radius: 20px;
+        border-width: thin;
+        border-color: #bbc4d4;
+        text-align: center;
+        font-family: cursive;
+        padding: 14px 16px;
+      }
+      a {
+        color: rgb(60, 0, 255);
+        padding-inline: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <a href=""><img width="90px" src="logo.png" alt="" /></a>
+      <a class="active" href="Index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="Register.html">Register</a>
+    </div>
+    <hr />
+    <h1>Thia Is Gallery Page</h1>
+    <hr />
+    <div style="align-items: center">
+      <img src="1.jpeg" />
+      <img src="2.jpeg" />
+      <img src="3.jpeg" />
+      <img width="200px" height="200px" src="7.png" />
+      <img width="200px" height="200px" src="8.jpg" />
+      <img width="200px" height="200px" src="9.jpg" />
+    </div>
+    <h1>HTML5 : Figure And Figure Caption</h1>
+    <code class="language-markup"> &lt;figure> &lt;/figure&gt; </code>
+    <p>
+      The <b> &lt; figure &gt;</b> tag specifies self-contained content, like
+      illustrations, diagrams, photos, code listings, etc. While the content of
+      the <b> &lt; figure &gt;</b> element is related to the main flow, its
+      position is independent of the main flow, and if removed it should not
+      affect the flow of the document.
+    </p>
+    <code class="language-markup">&lt;figcaption> &lt;/figcaption></code>
+    <p>
+      The <b>&lt;figcaption> </b> tag defines a caption for a
+      <b>&lt;figcaption> </b> element. The <b>&lt;figcaption> </b> element can
+      be placed as the first or last child of the
+      <b>&lt;figcaption> </b> element.
+    </p>
+    <hr />
+    <figure>
+      <img src="5.jpeg" alt="" />
+      <figcaption>The Sky With Mountine So beautiful</figcaption>
+    </figure>
+    <figure>
+      <img src="6.jpeg" alt="" />
+      <figcaption>this picture is nighty sky with many bright stars</figcaption>
+    </figure>
+  </body>
+</html>
