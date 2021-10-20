@@ -19,37 +19,51 @@
         color: rgb(60, 0, 255);
         padding-inline: 20px;
       }
-      /* .center {
-        text-align: center;
-      } */
+      fieldset {
+        width: 200px;
+        height: 230px;
+      }
+      .login {
+        float: left;
+      }
+      label {
+        float: left;
+      }
     </style>
   </head>
-  <body style="text-align: center">
-    <div>
-      <a href=""><img width="90px" src="logo.png" alt="" /></a>
-      <a class="active" href="Index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="Login.html">Login</a>
-      <a href="Register.html">Register</a>
-    </div>
-    <h1>This Is Register page</h1>
-    <hr />
-    <h2>Please Register to Continue</h2>
-    <p>Fill The Require Fields</p>
-    <hr />
-    <form>
+  <center>
+    <body>
+      <div>
+        <a href=""><img width="90px" src="logo.png" alt="" /></a>
+        <a class="active" href="Index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="Login.html">Login</a>
+        <a href="Register.html">Register</a>
+      </div>
+      <h1>This Is Register page</h1>
+      <hr />
+      <h2>Please Register to Continue</h2>
+      <p>Fill The Require Fields</p>
+      <hr />
       <fieldset>
-        <legend>Register</legend>
-        <p>Full Name :<input type="text" placeholder="Full Name*" /></p>
-        <p>Email : <input type="email" placeholder="Email*" /></p>
-        <p>Password : <input type="password" placeholder="Password*" /></p>
-        <button type="submit">Register</button> <br />
-        <a href="#">Already a user?</a>
+        <legend>login</legend>
+        <label for="email">E-mail: </label
+        ><input type="email" placeholder="E-Mail*" />
+        <br />
+        <br />
+        <label for="password">Password:</label
+        ><input type="password" placeholder="Password*" />
+        <br />
+        <br />
+        <input type="submit" value="Login" class="login" />
+        <br />
+        <br />
+        <a href="register.html">Not a user?</a>
       </fieldset>
-    </form>
-    <hr />
-    <p>Copyright &copy; 2021. All rights reserved</p>
-  </body>
+      <hr />
+      <p>Copyright &copy; 2021. All rights reserved</p>
+    </body>
+  </center>
 </html>

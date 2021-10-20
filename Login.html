@@ -11,7 +11,6 @@
         border-radius: 20px;
         border-width: thin;
         border-color: #bbc4d4;
-        text-align: center;
         font-family: cursive;
         padding: 14px 16px;
       }
@@ -19,12 +18,16 @@
         color: rgb(60, 0, 255);
         padding-inline: 20px;
       }
-      /* .center {
-        text-align: center;
-      } */
+      fieldset {
+    width: 200px;
+    height: 230px;}
+    label {
+        float: left;
+      }
     </style>
   </head>
-  <body style="text-align: center">
+  <center>
+  <body>
     <div>
       <a href=""><img width="90px" src="logo.png" alt="" /></a>
       <a class="active" href="Index.html">Home</a>
@@ -34,21 +37,23 @@
       <a href="Login.html">Login</a>
       <a href="Register.html">Register</a>
     </div>
-    <h1 class="center">This Is Login Page</h1>
+    <h1>This Is Login Page</h1>
     <hr />
-    <h3 class="center">Please Login To Continue</h3>
+    <h3>Please Login To Continue</h3>
 
     <form>
+      <fieldset>
       <legend>Login</legend>
-      <label>Email: <input type="email" placeholder="Email" /></label> <br />
+      <label>Email:</label><input type="email" placeholder="Email" /> <br />
       <br />
-      <label>Password: <input type="password" placeholder="Password" /></label>
+      <label>Password:</label> <input type="password" placeholder="Password" />
       <br />
       <br />
       <button type="submit">Login</button>
-      <a href="#">Not a user?</a>
+      <a href="Register.html">Not a user?</a>
     </form>
+    </fieldset>
     <hr />
-    <p class="center">Copyright &copy; 2021. All rights reserved</p>
+    <p>Copyright &copy; 2021. All rights reserved</p> </center>
   </body>
 </html>
