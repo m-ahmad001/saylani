@@ -12,7 +12,6 @@
         border-width: thin;
         border-color: #bbc4d4;
         text-align: center;
-        font-family: cursive;
         padding: 14px 16px;
       }
       a {
@@ -20,13 +19,9 @@
         padding-inline: 20px;
       }
       fieldset {
-        width: 200px;
-        height: 230px;
+        width: fit-content;
       }
-      .login {
-        float: left;
-      }
-      label {
+      .register {
         float: left;
       }
     </style>
@@ -48,19 +43,44 @@
       <p>Fill The Require Fields</p>
       <hr />
       <fieldset>
-        <legend>login</legend>
-        <label for="email">E-mail: </label
-        ><input type="email" placeholder="E-Mail*" />
-        <br />
-        <br />
-        <label for="password">Password:</label
-        ><input type="password" placeholder="Password*" />
-        <br />
-        <br />
-        <input type="submit" value="Login" class="login" />
-        <br />
-        <br />
-        <a href="register.html">Not a user?</a>
+        <legend>Register</legend>
+        <p>
+          <label for="fname">Full Name:</label>
+          <input type="text" id="fname" placeholder="Full Name*" />
+        </p>
+        <p>
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" placeholder="E-Mail*" />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" placeholder="Password*" id="password" />
+        </p>
+        <p><label for="tel">Tel:</label><input type="tel" id="tel" /></p>
+        <p>
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="gender" /> Mail
+          <input type="radio" name="gender" id="gen" />Female
+        </p>
+        <p>
+          <label for="dob">D_O_B :</label>
+          <input type="date" name="" id="dob" />
+        </p>
+        <p>
+          <label for="hobbie"><b>Hobbies:</b></label> BaseBall
+          <input type="checkbox" name="hobbie" id="cricket" /> cricket
+          <input type="checkbox" name="hobbie" id="Football" /> football
+          <input type="checkbox" name="hobbie" id="Racket Shattle" />Racket
+          Shattle
+        </p>
+        <p>
+          <label for="media">Upload You Picture: </label
+          ><input type="file" id="media" />
+        </p>
+
+        <input type="submit" value="Register" class="register" />
+
+        <a href="register.html">Already a User</a>
       </fieldset>
       <hr />
       <p>Copyright &copy; 2021. All rights reserved</p>
